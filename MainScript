@@ -1,0 +1,133 @@
+print("Coding Legend @boylovers made this.")
+                -- MSG @boylovers FOR A PAID SCRIPT W HELLA FEATURES AND MORE
+                -- MSG @boylovers FOR A PAID SCRIPT W HELLA FEATURES AND MORE
+                -- MSG @boylovers FOR A PAID SCRIPT W HELLA FEATURES AND MORE
+                -- MSG @boylovers FOR A PAID SCRIPT W HELLA FEATURES AND MORE
+                -- MSG @boylovers FOR A PAID SCRIPT W HELLA FEATURES AND MORE
+                -- MSG @boylovers FOR A PAID SCRIPT W HELLA FEATURES AND MORE
+                -- MSG @boylovers FOR A PAID SCRIPT W HELLA FEATURES AND MORE
+                -- MSG @boylovers FOR A PAID SCRIPT W HELLA FEATURES AND MORE
+                -- MSG @boylovers FOR A PAID SCRIPT W HELLA FEATURES AND MORE
+                -- MSG @boylovers FOR A PAID SCRIPT W HELLA FEATURES AND MORE
+                -- MSG @boylovers FOR A PAID SCRIPT W HELLA FEATURES AND MORE
+                -- MSG @boylovers FOR A PAID SCRIPT W HELLA FEATURES AND MORE
+                -- MSG @boylovers FOR A PAID SCRIPT W HELLA FEATURES AND MORE
+                -- MSG @boylovers FOR A PAID SCRIPT W HELLA FEATURES AND MORE
+                -- MSG @boylovers FOR A PAID SCRIPT W HELLA FEATURES AND MORE
+                -- MSG @boylovers FOR A PAID SCRIPT W HELLA FEATURES AND MORE
+                -- MSG @boylovers FOR A PAID SCRIPT W HELLA FEATURES AND MORE
+                -- MSG @boylovers FOR A PAID SCRIPT W HELLA FEATURES AND MORE
+                -- MSG @boylovers FOR A PAID SCRIPT W HELLA FEATURES AND MORE
+                -- MSG @boylovers FOR A PAID SCRIPT W HELLA FEATURES AND MORE
+                -- MSG @boylovers FOR A PAID SCRIPT W HELLA FEATURES AND MORE
+                -- MSG @boylovers FOR A PAID SCRIPT W HELLA FEATURES AND MORE
+                -- MSG @boylovers FOR A PAID SCRIPT W HELLA FEATURES AND MORE
+                -- MSG @boylovers FOR A PAID SCRIPT W HELLA FEATURES AND MORE
+                -- MSG @boylovers FOR A PAID SCRIPT W HELLA FEATURES AND MORE
+                -- MSG @boylovers FOR A PAID SCRIPT W HELLA FEATURES AND MORE
+                -- MSG @boylovers FOR A PAID SCRIPT W HELLA FEATURES AND MORE
+                -- MSG @boylovers FOR A PAID SCRIPT W HELLA FEATURES AND MORE
+                -- MSG @boylovers FOR A PAID SCRIPT W HELLA FEATURES AND MORE
+                -- MSG @boylovers FOR A PAID SCRIPT W HELLA FEATURES AND MORE
+                -- MSG @boylovers FOR A PAID SCRIPT W HELLA FEATURES AND MORE
+                -- MSG @boylovers FOR A PAID SCRIPT W HELLA FEATURES AND MORE
+                -- MSG @boylovers FOR A PAID SCRIPT W HELLA FEATURES AND MORE
+                -- MSG @boylovers FOR A PAID SCRIPT W HELLA FEATURES AND MORE
+                -- MSG @boylovers FOR A PAID SCRIPT W HELLA FEATURES AND MORE
+                -- MSG @boylovers FOR A PAID SCRIPT W HELLA FEATURES AND MORE
+                -- MSG @boylovers FOR A PAID SCRIPT W HELLA FEATURES AND MORE
+                -- MSG @boylovers FOR A PAID SCRIPT W HELLA FEATURES AND MORE
+                -- MSG @boylovers FOR A PAID SCRIPT W HELLA FEATURES AND MORE
+                -- MSG @boylovers FOR A PAID SCRIPT W HELLA FEATURES AND MORE
+                -- MSG @boylovers FOR A PAID SCRIPT W HELLA FEATURES AND MORE
+                -- MSG @boylovers FOR A PAID SCRIPT W HELLA FEATURES AND MORE
+-- AUTO FARM 
+-- AUTO RAID
+-- BEST TYPE SOUL SCRIPT 
+                -- MSG @boylovers FOR A PAID SCRIPT W HELLA FEATURES AND MORE
+
+                -- MSG @boylovers FOR A PAID SCRIPT W HELLA FEATURES AND MORE
+
+                -- MSG @boylovers FOR A PAID SCRIPT W HELLA FEATURES AND MORE
+
+                -- MSG @boylovers FOR A PAID SCRIPT W HELLA FEATURES AND MORE
+
+local function createPopup()
+    game:GetService("StarterGui"):SetCore("SendNotification",{
+        Title = "Adjuchar ESP", -- Required
+        Text = "@Boylovers Made this Script", -- Required
+    })
+end
+                -- MSG @boylovers FOR A PAID SCRIPT W HELLA FEATURES AND MORE
+
+local function AdjucharPopUP()
+    game:GetService("StarterGui"):SetCore("SendNotification",{
+        Title = "Adjuchar Spawned", -- Required
+        Text = "A new Jackal or Animation has been found! @boylovers", -- Required
+    })
+end
+                -- MSG @boylovers FOR A PAID SCRIPT W HELLA FEATURES AND MORE
+
+createPopup()
+                -- MSG @boylovers FOR A PAID SCRIPT W HELLA FEATURES AND MORE
+
+
+local function checkEntities()
+    local entities = game:GetService("Workspace").Entities:GetDescendants()
+    local isWorking = false
+                -- MSG @boylovers FOR A PAID SCRIPT W HELLA FEATURES AND MORE
+
+
+                -- MSG @boylovers FOR A PAID SCRIPT W HELLA FEATURES AND MORE
+
+
+    for _, entity in ipairs(entities) do
+        if entity:IsA("Model") then
+            local jackalHair = entity:FindFirstChild("JackalHair")
+            local animateAdjuchas = entity:FindFirstChild("AnimateAdjuchas")
+                            -- MSG @boylovers FOR A PAID SCRIPT W HELLA FEATURES AND MORE
+
+            if jackalHair or animateAdjuchas then
+                isWorking = true
+                                -- MSG @boylovers FOR A PAID SCRIPT W HELLA FEATURES AND MORE
+
+                local existingBillboardGui = entity:FindFirstChild("BillboardGui")
+                if existingBillboardGui then
+                    existingBillboardGui:Destroy()
+                end
+                -- MSG @boylovers FOR A PAID SCRIPT W HELLA FEATURES AND MORE
+                local billboardGui = Instance.new("BillboardGui")
+                billboardGui.Name = "BillboardGui"
+                billboardGui.AlwaysOnTop = true
+                billboardGui.Size = UDim2.new(0, 200, 0, 50)
+                billboardGui.StudsOffset = Vector3.new(0, 5, 0)
+                billboardGui.Adornee = entity
+                -- MSG @boylovers FOR A PAID SCRIPT 
+                local label = Instance.new("TextLabel")
+                label.Size = UDim2.new(1, 0, 1, 0)
+                label.BackgroundColor3 = Color3.new(1, 1, 1)
+                label.TextColor3 = Color3.new(0, 0, 0)
+                label.Text = "Adjuchar Is Here - "
+                label.Font = Enum.Font.SourceSansBold
+                label.FontSize = Enum.FontSize.Size24
+                label.Parent = billboardGui
+                -- MSG @boylovers FOR A PAID SCRIPT 
+                billboardGui.Parent = entity
+                AdjucharPopUP()
+                -- Send message to webhook ( DISABLED FOR TIME BEING )
+                
+            end
+        end
+    end
+    -- MSG @boylovers FOR A PAID SCRIPT 
+    if not isWorking then
+        print("Not working")
+    end
+end
+-- MSG @boylovers FOR A PAID SCRIPT 
+game:GetService("Players").PlayerAdded:Connect(function(player)
+    wait(5) -- Delay to ensure the player's character is fully loaded
+    checkEntities()
+end)
+
+-- MSG @boylovers FOR A PAID SCRIPT 
