@@ -258,15 +258,21 @@ wait(2)
 )
 
 
+-- AUTO FARM
+
+
+-- MISC
+
+
+-- WALKSPEED
+
+
 btns:Button(
     "Player Esp",
     function()
         local function createBillboard(entity)
-    local existingBillboardGui = entity:FindFirstChild("BillboardGui")
-    if existingBillboardGui then
-        existingBillboardGui:Destroy()
-    end
-    
+
+
     local billboardGui = Instance.new("BillboardGui")
     billboardGui.Name = "BillboardGui"
     billboardGui.AlwaysOnTop = true
@@ -320,32 +326,27 @@ btns:Button(
     "Adjuchar ESP",
     function()
     local function createBillboard(entity)
-    local existingBillboardGui = entity:FindFirstChild("BillboardGui")
-    if existingBillboardGui then
-        existingBillboardGui:Destroy()
-    end
+    
     
     local billboardGui = Instance.new("BillboardGui")
     billboardGui.Name = "BillboardGui"
     billboardGui.AlwaysOnTop = true
-    billboardGui.Size = UDim2.new(0, 0, 1, 0)
-    billboardGui.StudsOffset = Vector3.new(0, 10, 0) -- Adjust the Y value to move it higher
+    billboardGui.Size = UDim2.new(0, 100, 0, 100)
+    billboardGui.StudsOffset = Vector3.new(0, 10, 0)
     billboardGui.Adornee = entity
-    
+
     local frame = Instance.new("Frame")
     frame.Size = UDim2.new(1, 0, 1, 0)
-    frame.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+    frame.BackgroundColor3 = Color3.new(0, 1, 0) -- Green color
     frame.BackgroundTransparency = 0.5
     frame.BorderSizePixel = 0
     frame.ClipsDescendants = true
     frame.Parent = billboardGui
-    
 
-    
     local corner = Instance.new("UICorner")
     corner.CornerRadius = UDim.new(0.5, 0)
     corner.Parent = frame
-    
+
     billboardGui.Parent = entity
 end
 
