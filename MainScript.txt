@@ -331,7 +331,7 @@ btns:Button(
     local billboardGui = Instance.new("BillboardGui")
     billboardGui.Name = "BillboardGui"
     billboardGui.AlwaysOnTop = true
-    billboardGui.Size = UDim2.new(0, 100, 0, 100)
+    billboardGui.Size = UDim2.new(0, 5.5, 0, 5.5)
     billboardGui.StudsOffset = Vector3.new(0, 10, 0)
     billboardGui.Adornee = entity
 
